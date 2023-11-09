@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap"
       rel="stylesheet"
     />
     <title>Ana Cavalcanti</title>
@@ -29,63 +29,6 @@
       flex-direction: column;
       align-items: center;
     }
-
-    .container {
-      display: flex;
-      flex: 1 1 100%;
-      padding: 0;
-      width: 900px;
-    }
-
-    .left-column,
-    .right-column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-    }
-
-    .profile-pic-container {
-      display: flex;
-      justify-content: center;
-    }
-    .profile-pic {
-      border-radius: 50%;
-      width: 210px;
-      height: 210px;
-      object-fit: cover;
-      margin-bottom: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .bio {
-      color: #acbac7;
-      text-align: left;
-      line-height: 1.6;
-      font-family: "Open Sans", sans-serif;
-    }
-
-    .helloworld {
-      color: #dcbdfb;
-      text-align: left;
-      font-family: "Open Sans", sans-serif;
-    }
-
-    body {
-      font-family: "Source Code Pro", monospace;
-      background-color: #22272d;
-      color: #22272d;
-      margin: 0;
-      padding-bottom: 100px;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      position: relative;
-    }
-
     header {
       background-color: #ddd;
       padding: 15px;
@@ -106,17 +49,71 @@
       text-decoration: none;
       color: #555;
     }
+    .container {
+      display: flex;
+      flex: 1 1 100%;
+      padding: 0;
+      width: 900px;
+    }
+    .left-column,
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+    .profile-pic-container {
+      display: flex;
+      justify-content: center;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      margin-top: 40px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bio {
+      color: #acbac7;
+      text-align: left;
+      line-height: 1.8;
+      font-family: "Source Code Pro", monospace;
+      margin-top: 20px;
+    }
+    .compile_text {
+      color: #dcbdfb;
+      text-align: left;
+      margin-top: 40px;
+      font-family: "Source Code Pro", monospace;
+      font-weight: 200;
+    }
+
+    body {
+      font-family: "Source Code Pro", monospace;
+      background-color: #22272d;
+      color: #22272d;
+      margin: 0;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+    }
 
     .social-media {
       text-align: center;
       background-color: #22272d;
-      margin-top: 35px;
+      margin-top: 40px;
     }
 
     .social-links {
       list-style: none;
-      padding: 10px;
-      margin: 10px;
+      padding: 20px;
+      margin: 20px;
       display: flex;
       justify-content: center;
     }
@@ -129,13 +126,13 @@
       display: inline-block;
     }
     .social-links a img {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
     }
 
     footer {
       background-color: #ddd;
-      font-size: 14px;
+      font-size: 15px;
       text-align: center;
       padding: 20px;
       width: 100%;
@@ -158,11 +155,10 @@
         </ul>
       </nav>
     </header>
-
     <main class="main">
       <div class="container">
         <div class="left-column">
-          <h3 class="helloworld">cc -Wall -Wextra -Werror bio && ./a.out</h3>
+          <h3 class="compile_text">cc -Wall -Wextra -Werror bio && ./a.out</h3>
           <br />
           <p class="bio">
             I'm a Software Engineering student at Codam Coding College, part of
@@ -174,28 +170,9 @@
             <br />
             I have thrived in dynamic startup environments and have experience
             working on an international scale. You're more than welcome to grab
-            a cup of tea and take a look at my Portfolio and to tag along in
-            this exciting new journey of mine.
+            a cup of tea, take a look at my Portfolio, and tag along in this
+            exciting new journey of mine.
           </p>
-          <div class="social-media">
-            <ul class="social-links">
-              <li>
-                <a href="https://github.com/anacavancalti">
-                  <img src="https://i.imgur.com/ALIDFla.png" alt="GitHub" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/anacavancalti/">
-                  <img src="https://i.imgur.com/T7QHGRw.png" alt="LinkedIn" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/anacavancalti/">
-                  <img src="https://i.imgur.com/6Jw6xh7.png" alt="Instagram" />
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
         <div class="right-column">
           <div class="profile">
@@ -206,6 +183,25 @@
             />
           </div>
         </div>
+      </div>
+      <div class="social-media">
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/anacavancalti">
+              <img src="https://i.imgur.com/ALIDFla.png" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anacavancalti/">
+              <img src="https://i.imgur.com/T7QHGRw.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/anacavancalti/">
+              <img src="https://i.imgur.com/6Jw6xh7.png" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
       </div>
     </main>
 
