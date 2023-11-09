@@ -13,22 +13,34 @@
       padding: 0;
       box-sizing: border-box;
     }
+    html {
+      height: 100%;
+      position: relative;
+    }
+    main {
+      flex: 1;
+    }
 
     body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
       color: #333;
+      margin: 0;
+      padding-bottom: 50px; /* Set this value to the height of your footer */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
       background-color: #ddd;
       padding: 15px;
-	  text-align: center;
+      text-align: center;
     }
 
     nav ul {
       list-style: none;
-	  display: inline-block;
+      display: inline-block;
     }
 
     nav ul li {
@@ -57,24 +69,48 @@
       margin-top: 15px;
       color: #333;
     }
+    .social-media {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links {
+      list-style: none;
+      padding: 0;
+    }
+    .social-links li {
+      display: inline;
+      margin: 0 10px;
+    }
+    .social-links a {
+      text-decoration: none;
+      display: inline-block;
+    }
+    .social-links a img {
+      width: 40px;
+      height: 40px;
+    }
+
     footer {
       background-color: #ddd;
       text-align: center;
       padding: 10px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
     }
   </style>
   <body>
     <header>
       <nav>
         <ul class="dropdown">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">SheCodes</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
-          <li><a href="#">Link 6</a></li>
-          <li><a href="#">Link 7</a></li>
-          <li><a href="#">Link 8</a></li>
+          <li><a href="https://github.com/anacavancalti">GitHub</a></li>
+          <li>
+            <a
+              href="https://www.shecodes.io/workshops?coupon_name=anacavancalti#apply"
+              >SheCodes</a
+            >
+          </li>
+          <li><a href="#">Portfolio</a></li>
         </ul>
       </nav>
     </header>
@@ -91,8 +127,26 @@
           Amsterdam.
         </p>
       </div>
+      <div class="social-media">
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/anacavancalti">
+              <img src="https://i.imgur.com/ALIDFla.png" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anacavancalti/">
+              <img src="https://i.imgur.com/T7QHGRw.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/anacavancalti/">
+              <img src="https://i.imgur.com/6Jw6xh7.png" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </main>
-
     <footer>
       <p>Developed by Ana Cavalcanti with ♡ using HTML, CSS, and JavaScript.</p>
     </footer>
