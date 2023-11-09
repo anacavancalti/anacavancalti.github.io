@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <style>
+    /* html overrides */
     * {
       margin: 0;
       padding: 0;
@@ -22,12 +23,27 @@
     html {
       height: 100%;
       position: relative;
+      overflow-x: hidden;
     }
+
+    body {
+      font-family: "Source Code Pro", monospace;
+      background-color: #22272d;
+      color: #22272d;
+      margin: 0;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+    }
+
     main {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 50px;
     }
     header {
       background-color: #ddd;
@@ -36,27 +52,75 @@
       font-weight: 100;
     }
 
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
     nav ul {
       list-style: none;
-      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      @media only screen and (min-width: 600px) {
+        max-width: 500px;
+      }
     }
 
     nav ul li {
-      display: inline;
-      margin-right: 15px;
-      margin: 0 25px;
+      flex: 1;
     }
 
     nav ul li a {
       text-decoration: none;
       color: #555;
     }
+
+    footer {
+      background-color: #ddd;
+      font-size: 15px;
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* For very large screens */
+    @media only screen and (min-width: 1920px) {
+      .container {
+        max-width: 1440px;
+      }
+    }
+
+    /* For large screens */
+    @media only screen and (min-width: 1440px) {
+      .container {
+        max-width: 1200px;
+      }
+    }
+
+    /* For medium screens */
+    @media only screen and (min-width: 1024px) {
+      .container {
+        max-width: 960px;
+      }
+    }
+
+    /* For mobile screens */
+    @media only screen and (max-width: 768px) {
+      .container {
+        padding: 0 30px;
+        max-width: 100%;
+      }
+    }
+
+    /* css classes */
     .container {
       display: flex;
       flex: 1 1 100%;
-      padding: 0;
-      width: 900px;
     }
+
     .left-column,
     .right-column {
       display: flex;
@@ -95,34 +159,28 @@
       font-weight: 600;
     }
 
-    body {
-      font-family: "Source Code Pro", monospace;
-      background-color: #22272d;
-      color: #22272d;
-      margin: 0;
-      padding-bottom: 100px;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      position: relative;
+    @media only screen and (max-width: 768px) {
+      .social-media {
+        padding: 0 30px;
+      }
     }
 
     .social-media {
-      text-align: center;
-      background-color: #22272d;
-      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 300px;
     }
 
     .social-links {
       list-style: none;
-      padding: 20px;
-      margin: 20px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      flex: 1;
     }
     .social-links li {
-      display: inline;
-      margin: 0 15px;
+      display: flex;
+      justify-content: center;
     }
     .social-links a {
       text-decoration: none;
@@ -131,16 +189,6 @@
     .social-links a img {
       width: 30px;
       height: 30px;
-    }
-
-    footer {
-      background-color: #ddd;
-      font-size: 15px;
-      text-align: center;
-      padding: 20px;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
     }
   </style>
   <body>
