@@ -3,91 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://imgur.com/44UR5sE" type="image/png" />
     <title>Ana Cavalcanti</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-      }
-
-      .profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-      }
-
-      .profile-info {
-        text-align: center;
-      }
-
-      .profile-info img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-      }
-
-      .links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      .links a {
-        display: block;
-        width: 200px;
-        padding: 10px;
-        margin: 5px;
-        text-align: center;
-        text-decoration: none;
-        color: #333;
-        border: 1px solid #333;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-      }
-
-      .links a:hover {
-        background-color: #333;
-        color: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .profile {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .bio {
+      margin-top: 20px;
+      color: #333;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
   <body>
     <header>
-      <h1>Ana Cavalcanti</h1>
+      <nav>
+        <ul class="dropdown">
+          <li><a href="https://github.com/anacavancalti">GitHub</a></li>
+          <li>
+            <a
+              href="https://www.shecodes.io/workshops?coupon_name=anacavancalti#apply"
+              >SheCodes</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anacavancalti/">LinkedIn</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/anacavancalti/shecodes-challenge/blob/main/index.html"
+              >Star Wars Project</a
+            >
+          </li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+          <li><a href="#">Link 7</a></li>
+          <li><a href="#">Link 8</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="profile">
-      <div class="profile-info">
-        <img src="profile-picture.jpg" alt="Profile Picture" />
-        <h2>About me</h2>
-        <p>Software Engineering student @ Codam Coding College</p>
-      </div>
-
-      <div class="links">
-        <a href="https://github.com/anacavancalti" target="_blank">Github</a>
-        <a
-          href="https://www.shecodes.io/workshops?coupon_name=anacavancalti#apply"
-          target="_blank"
-          >SheCodes</a
-        >
-        <a href="https://www.linkedin.com/in/anacavancalti/" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://www.instagram.com/anacavancalti/" target="_blank"
-          >Instagram</a
-        >
+    <main>
+      <div class="profile">
+        <img
+          src="https://imgur.com/RvCeTQJ"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <p class="bio">
+          Software Engineering student @ Codam Coding College (42 Network).
+        </p>
       </div>
     </main>
+
+    <footer>
+      <p>
+        Developed by Ana Cavalcanti with ❤️ using HTML, CSS, and JavaScript.
+      </p>
+    </footer>
   </body>
 </html>
