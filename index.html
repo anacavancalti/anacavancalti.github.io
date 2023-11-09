@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://i.imgur.com/BDNjJQ8.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Ana Cavalcanti</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -19,14 +25,60 @@
     }
     main {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex: 1 1 100%;
+      padding: 20px;
+      width: 750px;
+    }
+
+    .left-column,
+    .right-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .profile-pic-container {
+      display: flex;
+      justify-content: center;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .bio {
+      color: #f5f5f5;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .helloworld {
+      color: #dcbdfb;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background-color: #333;
-      color: #333;
+      font-family: "Source Code Pro", monospace;
+      background-color: #22272d;
+      color: #22272d;
       margin: 0;
-      padding-bottom: 50px; /* Set this value to the height of your footer */
+      padding-bottom: 100px;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -53,31 +105,12 @@
       color: #555;
     }
 
-    .profile {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .profile-pic {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-    }
-
-    .bio {
-      margin-top: 15px;
-      color: #f5f5f5;
-    }
     .social-media {
       text-align: center;
-      margin-top: 20px;
-      background-color: #333;
-      padding: 10px;
-      width: 100%;
-      position: absolute;
-      bottom: 50px;
+      background-color: #22272d;
+      margin-top: 40px;
     }
+
     .social-links {
       list-style: none;
       padding: 0;
@@ -87,7 +120,7 @@
     }
     .social-links li {
       display: inline;
-      margin: 0 10px;
+      margin: 0 15px;
     }
     .social-links a {
       text-decoration: none;
@@ -101,7 +134,7 @@
     footer {
       background-color: #ddd;
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       width: 100%;
       position: absolute;
       bottom: 0;
@@ -123,40 +156,57 @@
       </nav>
     </header>
 
-    <main>
-      <div class="profile">
-        <img
-          src="https://i.imgur.com/RvCeTQJ.jpg"
-          alt="Profile Picture"
-          class="profile-pic"
-        />
-        <p class="bio">
-          Software Engineering Student @ Codam Coding College, 42 Network in
-          Amsterdam.
-        </p>
-      </div>
-      <div class="social-media">
-        <ul class="social-links">
-          <li>
-            <a href="https://github.com/anacavancalti">
-              <img src="https://i.imgur.com/ALIDFla.png" alt="GitHub" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/anacavancalti/">
-              <img src="https://i.imgur.com/T7QHGRw.png" alt="LinkedIn" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/anacavancalti/">
-              <img src="https://i.imgur.com/6Jw6xh7.png" alt="Instagram" />
-            </a>
-          </li>
-        </ul>
+    <main class="main">
+      <div class="container">
+        <div class="left-column">
+          <div class="profile">
+            <img
+              src="https://i.imgur.com/RvCeTQJ.jpg"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+          </div>
+        </div>
+        <div class="right-column">
+          <h3 class="helloworld">Hello, World!</h3>
+          <br />
+          <p class="bio">
+            I'm a Software Engineering student at Codam Coding College, part of
+            the prestigious 42 Network in Amsterdam, Netherlands. I have a
+            proven track record in the tech industry, having worked as a Live
+            Sites Specialist at FareHarbor and as a Content and Quality Control
+            Coordinator at Booking.com.
+            <br />
+            I have thrived in dynamic startup environments and have experience
+            working on an international scale. You're more than welcome to grab
+            a cup of tea and take a look at my projects and tag along in this
+            exciting new journey of mine.
+          </p>
+          <div class="social-media">
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/anacavancalti">
+                  <img src="https://i.imgur.com/ALIDFla.png" alt="GitHub" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/anacavancalti/">
+                  <img src="https://i.imgur.com/T7QHGRw.png" alt="LinkedIn" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/anacavancalti/">
+                  <img src="https://i.imgur.com/6Jw6xh7.png" alt="Instagram" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
+
     <footer>
-      <p>Developed by Ana Cavalcanti with ♡ using HTML, CSS, and JavaScript.</p>
+      <p>Developed by Ana Cavalcanti with 🎔 using HTML, CSS, and JavaScript.</p>
     </footer>
   </body>
 </html>
