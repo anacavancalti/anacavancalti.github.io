@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://i.imgur.com/BDNjJQ8.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ana Cavalcanti - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      height: 100%;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: "Source Code Pro", monospace;
+      background-color: #22272d;
+      color: #22272d;
+      margin: 0;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    main > :last-child {
+      margin-bottom: 50px;
+    }
+
+    header {
+      background-color: #ddd;
+      padding: 30px;
+      text-align: center;
+      font-weight: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      @media only screen and (min-width: 600px) {
+        max-width: 500px;
+      }
+    }
+
+    nav ul li {
+      flex: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #555;
+    }
+
+    h1 {
+      color: #ddd;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #dddddd;
+      font-size: 15px;
+      text-align: center;
+      padding: 35px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex: 1 1 100%;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .projects {
+        grid-template-columns: repeat(2, 350px);
+      }
+    }
+
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    .project-card img {
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul class="dropdown">
+          <li>
+            <a href="https://github.com/anacavancalti" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li>
+            <a
+              href="https://www.shecodes.io/workshops?coupon_name=anacavancalti#apply"
+              target="_blank"
+              >SheCodes</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Portfolio</h1>
+    <main class="main">
+      <div class="container">
+        <section class="projects">
+          <div class="project-card">
+            <a href="projects/starwars_project.html" target="_blank">
+              <img
+                src="https://i.imgur.com/MTsbQIi.png"
+                alt="Star Wars Project"
+              />
+            </a>
+            <h3>Star Wars Project</h3>
+            <p>"Epic Movie Challenge" winner, SheCodes Basic course.</p>
+          </div>
+          <div class="project-card">
+            <a href="projects/fleabag_project.html" target="_blank">
+              <img
+                src="https://i.imgur.com/h449Drd.png"
+                alt="Fleabag Project"
+              />
+            </a>
+            <h3>Fleabag Project</h3>
+            <p>Final Project, SheCodes Basic course.</p>
+          </div>
+          <!-- Add more project cards as needed -->
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>{ Developed by Ana Cavalcanti 💻 }</p>
+    </footer>
+  </body>
+</html>

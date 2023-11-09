@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fleabag 🥃</title>
+    <style>
+      body {
+        background: linear-gradient(45deg, #c2a69b, #43777d);
+      }
+      div {
+        padding: 10px 30px 20px 30px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 40px 300px;
+      }
+      h1 {
+        text-align: center;
+        color: #c2262a;
+        font-family: "Bebas Neue", cursive;
+        font-size: 100px;
+        margin-bottom: 1px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: 100;
+        font-family: "Crimson Text", serif;
+        font-style: italic;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 5px;
+      }
+      .row {
+        font-family: "Crimson Text", serif;
+        text-align: center;
+        margin: 30px 10px 30px;
+      }
+      strong {
+        font-size: 26px;
+        font-style: italic;
+      }
+      p {
+        line-height: 25px;
+        font-size: 20px;
+      }
+      button {
+        color: white;
+        border-color: transparent;
+        margin-top: 30px;
+        width: 180px;
+        background: #c2262a;
+        font-weight: 600;
+        padding: 20px 35px;
+        border-radius: 0px;
+        box-shadow: 3px 1px 1px grey;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #43777d;
+        color: white;
+        cursor: pointer;
+      }
+
+      hr {
+        border: 1px dotted grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>FLEABAG</h1>
+      <h2>This is a love story</h2>
+      <div class="row">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/836/original/Screen_Shot_2023-04-13_at_14.11.04.png?1681387891"
+          alt="Fleabag holding a cup of coffee at the Guinea Pig Cafe"
+        />
+      </div>
+      <div class="row">
+        <strong>About the series</strong>
+        <br />
+        <p>
+          "A dry-witted woman, known only as <em>Fleabag</em>, has no filter as
+          she navigates life and love in London while trying to cope with
+          tragedy. The angry, grief-riddled woman tries to heal while rejecting
+          anyone who tries to help her, but <em>Fleabag</em> continues to keep
+          up her bravado through it all. Comic actress Phoebe Waller-Bridge
+          stars as the titular character on the series, which is based on
+          Waller-Bridge's 2013 one-woman show of the same name." Source: Amazon
+          Prime Video.
+        </p>
+        <button class="watchButton">WATCH NOW</button>
+      </div>
+      <hr />
+      <div class="row">
+        <p>
+          Coded by <span style="color: #c2262a">Ana Cavalcanti</span> with HTML,
+          CSS, and JavaScript for the
+          <a href="https://www.shecodes.io/" span style="color: #43777d"
+            >SheCodes</a
+          >
+          Basics Final Project.
+        </p>
+      </div>
+    </div>
+    <script>
+      function amazonPrime() {
+        let watched = prompt("Have you ever watched Fleabag? 'Yes' or 'no'.");
+        if (watched !== null && watched.toLocaleLowerCase() === "yes") {
+          let confirmation = prompt("It's God, isn't it? 'Yes' or 'no'.");
+          if (
+            confirmation !== null &&
+            confirmation.toLocaleLowerCase() === "yes"
+          ) {
+            alert("It will pass!");
+          } else {
+            alert("🔥 ");
+          }
+        }
+        if (watched !== null && watched.toLocaleLowerCase() === "no") {
+          window.location.href =
+            "https://www.primevideo.com/dp/amzn1.dv.gti.64b55200-c545-6a79-0c43-e6246e9a15fd?autoplay=0&ref_=atv_cf_strg_wb";
+        }
+      }
+
+      let watchButton = document.querySelector(".watchButton");
+      watchButton.addEventListener("click", amazonPrime);
+    </script>
+  </body>
+</html>
