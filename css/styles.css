@@ -31,11 +31,6 @@ body {
   background: #cadefc;
   min-height: 100%;
 }
-
-.content {
-  flex: 1;
-}
-
 .left img {
   border-radius: 100%;
   border: 7px solid #defcf9;
@@ -78,6 +73,7 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  flex: 1;
 }
 @media only screen and (max-width: 768px) {
   .content {
@@ -86,8 +82,8 @@ ul {
   }
 
   .left img {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
   }
 }
 
