@@ -20,9 +20,6 @@ body {
   font-style: normal;
   background: #cadefc;
 }
-.left {
-  align-self: auto;
-}
 .left img {
   border-radius: 100%;
   border: 7px solid #defcf9;
