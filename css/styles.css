@@ -45,11 +45,6 @@ body {
   align-self: center;
   transition: color 0.3s;
 }
-.right:hover {
-  background-color: #defcf9;
-  color: #c3bef0;
-  font-weight: 400;
-}
 .right,
 .left {
   display: flex;
