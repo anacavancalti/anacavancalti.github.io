@@ -21,14 +21,28 @@ body {
   background: #cadefc;
 }
 
+.left {
+  margin: 30px;
+  padding: 20px;
+}
+.left img {
+  border-radius: 100%;
+  border: 7px solid #defcf9;
+  width: 350px;
+  height: 350px;
+}
 .right {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  margin: 20px;
+  margin: 30px;
   text-align: left;
   padding: 20px;
   height: fit-content;
   align-self: center;
+}
+.right,
+.left {
+  flex-basis: 50%;
 }
 ul {
   list-style-type: none;
@@ -50,27 +64,10 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.right,
-.left {
-  flex-basis: 50%;
-}
 @media only screen and (max-width: 768px) {
   .content {
     flex-direction: column;
   }
-}
-.left {
-  margin-top: 40px;
-  margin-left: 80px;
-}
-.left img {
-  border-radius: 100%;
-  border: 7px solid #defcf9;
-  width: 350px;
-  height: 350px;
-}
-.right {
-  margin-right: 80px;
 }
 .social-links {
   margin: 20px;
