@@ -16,6 +16,10 @@ header {
   font-weight: 400;
   width: 100%;
 }
+h1 {
+  color: black;
+  margin: 30px 40px 0 40px;
+}
 .nav {
   display: flex;
   flex-direction: column;
@@ -35,8 +39,12 @@ body {
 .left img {
   border-radius: 100%;
   border: 7px solid #defcf9;
+  margin: 0 25px;
   width: 350px;
   height: 350px;
+}
+.left {
+  padding: 20px;
 }
 .right {
   background-color: rgba(255, 255, 255, 0.9);
@@ -45,6 +53,7 @@ body {
   height: fit-content;
   align-self: center;
   transition: color 0.3s;
+  padding: 40px;
 }
 .right,
 .left {
@@ -53,7 +62,6 @@ body {
   align-content: center;
   flex-wrap: wrap;
   flex-basis: 50%;
-  padding: 40px;
   margin: 15px 0 0;
 }
 ul {
