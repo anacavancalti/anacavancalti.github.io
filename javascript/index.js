@@ -7,4 +7,6 @@ function getName() {
   }
 }
 
-getName();
+(() => {
+  getName();
+})();
